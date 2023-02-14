@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Page Title</title>
-  </head>
-
-  <body>
-    <h1>Hello, World!</h1>
-  </body>
-  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenny's Clicker</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <button id="Rebirth" onclick="javascript:Rebirth()">Rebirth [$100000]</button>
+        <h1 id="CookieCount">0</h1>
+        <p id="CPS">0cps</p>
+        <button id="Cookie" onclick="javascript:ButtonClick()">CLICK ME</button>
+        <div class="Upgrades">
+            <button onclick="javascript:Upgrade('CPS', 10, 1)">Cookies Per Second +1 [$10]</button>
+            <button onclick="javascript:Upgrade('CPC', 25, 1)">Cookies Per Click +1 [$25]</button>
+            <button onclick="javascript:Upgrade('CPS', 50, 5)">Cookies Per Second +5 [$50]</button>
+            <button onclick="javascript:Upgrade('CPS', 250, 25)">Cookies Per Second +25 [$250]</button>
+            <button onclick="javascript:Upgrade('CPS', 1000, 100)">Cookies Per Second +100 [$1000]</button>
+        </div>
+    </div>
+</body>
 </html>
