@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brenny's Clicker</title>
-    <script src="script.js"></script>
+    <title>Capitals</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
 </head>
 <body>
-    <div class="content">
-        <button id="Rebirth" onclick="javascript:Rebirth()">Rebirth [$100000]</button>
-        <h1 id="CookieCount">0</h1>
-        <p id="CPS">0cps</p>
-        <button id="Cookie" onclick="javascript:ButtonClick()">CLICK ME</button>
-        <div class="Upgrades">
-            <button onclick="javascript:Upgrade('CPS', 10, 1)">Cookies Per Second +1 [$10]</button>
-            <button onclick="javascript:Upgrade('CPC', 25, 1)">Cookies Per Click +1 [$25]</button>
-            <button onclick="javascript:Upgrade('CPS', 50, 5)">Cookies Per Second +5 [$50]</button>
-            <button onclick="javascript:Upgrade('CPS', 250, 25)">Cookies Per Second +25 [$250]</button>
-            <button onclick="javascript:Upgrade('CPS', 1000, 100)">Cookies Per Second +100 [$1000]</button>
+    <header>
+        <div>
+            <h1>Capital Cities</h1>
+            <nav>
+                <a href="./index.html">Home</a>
+                /
+                <a href="#">Cities</a>
+            </nav>
         </div>
+    </header>
+    <h1 class="Title">City Capitals</h1>
+    <p style="color:gray; width: 100%; text-align: center;">Hover to view.</p>
+    <br> <!--Small break to make look better because padding go brrrr-->
+    <div class="TABLE">
+        <div><img src="flag-of-Canada.png"><p>The capital of Canada is Ottawa</p></div>
+        <div><img src="flag-of-France.png"><p>The capital of France is Paris</p></div>
+        <div><img src="flag-of-United-Kingdom.png"><p>The capital of the United Kingdom is London</p></div>
+        <div><img src="flag-of-Vatican-City.png"><p>The capital of Vatican City is Vatican City</p></div>
     </div>
+    <br>
+    <button>View More</button>
 </body>
 </html>
